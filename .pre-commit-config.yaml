@@ -4,3 +4,7 @@ repos:
   hooks:
     - id: terraform_fmt
     - id: terraform_docs
+    - id: terraform_tflint
+      args:
+        - --args=--module
+        - --args=--enable-rule=terraform_documented_variables
